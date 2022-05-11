@@ -48,10 +48,11 @@
 }
 
 .list {
-  padding: 0;
+  padding: 0px;
   display: flex;
   align-items: center;
   list-style: none;
+  margin: auto;
   color: white;
 }
 
