@@ -11,18 +11,18 @@ const OrderDetail = () => {
   return (
     <div className={styles.container}>
       <div className={styles.wrapper}>
-        <h1 className={styles.title}>You will pay $12 after delivery.</h1>
+        <h1 className={styles.title}>배달 정보를 작성해주세요</h1>
         <div className={styles.item}>
-          <label className={styles.label}>Name Surname</label>
-          <input placeholder="John Doe" type="text" className={styles.input} onChange={(e) => setCustomer(e.target.value)} />
+          <label className={styles.label}>성함</label>
+          <input placeholder="김xx" type="text" className={styles.input} onChange={(e) => setCustomer(e.target.value)} />
         </div>
         <div className={styles.item}>
-          <label className={styles.label}>Phone Number</label>
-          <input type="text" placeholder="+1 234 567 89" className={styles.input} />
+          <label className={styles.label}>휴대전화</label>
+          <input type="text" placeholder="010 0000 0000" className={styles.input} />
         </div>
         <div className={styles.item}>
-          <label className={styles.label}>Address</label>
-          <textarea rows={5} placeholder="Elton St. 505 NY" type="text" className={styles.textarea} onChange={(e) => setAddress(e.target.value)} />
+          <label className={styles.label}>주소</label>
+          <textarea rows={5} placeholder="경기도 광주시" type="text" className={styles.textarea} onChange={(e) => setAddress(e.target.value)} />
         </div>
         <button className={styles.button} onClick={handleClick}>
           Order

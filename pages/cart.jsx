@@ -6,6 +6,7 @@ import { PayPalScriptProvider, PayPalButtons, usePayPalScriptReducer } from '@pa
 import axios from 'axios'
 import { useRouter } from 'next/router'
 import { reset } from '../redux/cartSlice'
+import OrderDetail from '../components/OrderDetail'
 
 const Cart = () => {
   const cart = useSelector((state) => state.cart)
@@ -168,6 +169,7 @@ const Cart = () => {
           )}
         </div>
       </div>
+      {cash && <OrderDetail total={cart.total} createOrder={createOrder} />}
     </div>
   )
 }
